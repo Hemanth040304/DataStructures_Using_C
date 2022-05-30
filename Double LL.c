@@ -102,6 +102,7 @@ int Delete_at_Head()
 	{
 		val=Head->data;
 		Head=NULL;
+		count--;
 		return val;
 	}
 	else
