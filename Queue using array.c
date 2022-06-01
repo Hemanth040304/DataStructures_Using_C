@@ -5,7 +5,7 @@ int front=-1,rear=-1,*queue,size;
 
 void enqueue(int val)
 {
-	if(rear==size-1)
+	if(front==0 && rear==size-1)
 	{
 		printf("Queue is over flow\n");
 	}
