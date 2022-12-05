@@ -56,6 +56,17 @@ void display()
 	printf("\n");
 }
 
+void peek()
+{
+	if(queue[rear]==-1)
+	{
+		printf("Empty\n");
+	}
+	else{
+		printf("%d",queue[rear]);
+	}
+}
+
 void main()
 {
 	int ch,val;
@@ -63,7 +74,7 @@ void main()
 	queue=(int *)calloc(size,sizeof(int));
 	while(1)
 	{
-		printf("1.enqueue 2.dequeue 3.display 4.exit\n");
+		printf("1.enqueue 2.dequeue 3.display 4.peek 5.exit\n");
 		scanf("%d",&ch);
 		if(ch==1)
 		{
@@ -85,6 +96,10 @@ void main()
 		else if(ch==3)
 		{
 			display();
+		}
+		else if(ch==4)
+		{
+			peek();
 		}
 		else
 		{

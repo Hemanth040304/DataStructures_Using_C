@@ -1,10 +1,12 @@
 #include<stdio.h>
 int fun(int *arr,int n,int s)
 {
-	int i,x=0;
+	// 5 8 45 57 200
+	// 57
+	int i;
 	for(i=0;i<n;i++)
 	{
-		if(arr[i]==s)
+		if(arr[i]==s)//57==57
 		{
 			return 1;
 		}
